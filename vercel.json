@@ -1,0 +1,24 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "app.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/app.js"
+      }
+    ],
+    "env": {
+      "DB_NAME": "iamemoire_v2",
+      "DB_USER": "iamemoire",
+      "DB_PASSWORD": "mesErvices76@",
+      "DB_HOST": "mysql-iamemoire.alwaysdata.net",
+      "DB_PORT": "3306",
+      "NODE_ENV": "production"
+    }
+  }
+  
